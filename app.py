@@ -16,4 +16,4 @@ def inputs():
 @app.route("/story")
 def make_story():
     text = story.generate(request.args)
-    return render_template("story.html", text=text)t
+    return render_template("story.html", text=text)
