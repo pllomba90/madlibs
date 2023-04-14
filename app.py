@@ -4,8 +4,8 @@ from stories import story
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "topsecret"
-
-debug = DebugToolBarExtension(app)
+app.debug = True
+toolbar = DebugToolBarExtension(app)
 
 @app.route("/")
 def inputs():
